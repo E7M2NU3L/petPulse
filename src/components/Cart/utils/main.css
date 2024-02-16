@@ -1,0 +1,113 @@
+:root{
+    --primary-color: #11594C;
+    --secondary-color: #F27507;
+    --light-bg: #F2F2F2;
+    --hover-bg: #D95407;
+    --tertiary-color: #F22727;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Protest+Guerrilla&display=swap');
+
+.side-bar-section{
+    height: 8vh;
+    background-color: var(--secondary-color);
+}
+
+#card-note{
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 548px){
+    #card-note{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        gap: 2rem;
+        box-shadow: 2px 2px 0 2px #D95407;
+    }
+}
+
+.links ul li{
+    color: var(--light-bg);
+    font-family: "Poppins", sans-serif;
+}
+
+.links ul li:hover{
+    font-size: 1.2rem;
+    gap: 2rem;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in;
+}
+
+
+.search-bar form input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-bar form input:hover{
+    box-shadow: 0 2px 2px 2px var(--hover-bg);
+    outline: none;
+}
+
+.search-bar form button{
+    background-color: var(--tertiary-color);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.search-bar form button img {
+    color: var(--light-bg);
+}
+
+
+.products .row .card{
+    width: 340px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+@media  screen and (max-width:548px) {
+    .products .row{
+        flex-direction: column;
+    }
+
+    .card-content{
+        height: 100%;
+    }
+
+    .links{
+        display: none;
+    }
+}
+
+.card-content{
+    height: calc(100vh - 8vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .row img{
+    width: 300px;
+}
+
+
+
+

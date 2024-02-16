@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.more h1 , .you-may-like h1{
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+}
+
+.more .link, .you-may-link .link{
+    margin-top: 6rem;
+    margin-right: 1rem;
+}
+
+.image-holder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.paper{
+    width: 80vh;
+}
+
+@media screen and (max-width: 546px){
+    .image-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.text-head h4{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.pages-moving{
+    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages-moving div{
+    overflow-y: unset;
+}
+
+.flow-pack section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 546px) {
+    .flow-pack{
+        display: none;
+        flex-direction: column;
+    }
+
+    .flex-pack .stack{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 548px){
+    .scroller{
+        display: none;
+    }
+
+}

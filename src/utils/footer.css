@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #5E7349;
+    --secondary-color: #778C61;
+    --light-bg: #BFBAB0;
+    --orange-light: #BF7534;
+    --orange-bold: #BF532C;
+
+    --green-grad:  linear-gradient(to right top, #5e7349, #64794f, #6a7f55, #71865b, #778c61);
+
+    --orange-grad:  linear-gradient(to right top, #bf7534, #bf6d31, #bf652e, #bf5c2d, #bf532c);
+}
+
+.footer-section{
+    min-height: 100%;
+    background-color: var(--orange-bold);
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-section ul li a{
+    font-family: "protest-guerilla", sans-serif;
+}
+
+.footer-section .online-shop ul li a:hover, .footer-section .go-thru ul li a:hover, .footer-section .quick-links ul li a:hover, .footer-section .play-links ul li a:hover {
+    color: #fefedf;
+    transform: scale(1.3);
+    object-fit: cover;
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-section .online-shop ul li a:active, .footer-section .go-thru ul li a:active, .footer-section .quick-links ul li a:active, .footer-section .play-links ul li a:active {
+    color: red;
+    transform: scale(1.3);
+    object-fit: cover;
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-section .play-links img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-section .play-links .img-tab{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section .play-links .img-tab img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 2px rgba(0,0,0,0.4);
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in;        
+}
+
+@media screen and (max-width: 548px) {
+    .footer-section{
+        height: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section .online-shop , .footer-section .go-thru , .footer-section .quick-links , .footer-section .play-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width:548px){
+    .footer-section{
+        height: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-section .online-shop , .footer-section .go-thru , .footer-section .quick-links , .footer-section .play-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}

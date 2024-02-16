@@ -1,0 +1,62 @@
+.card-login{
+    padding: 4rem 1rem;
+    background: rgba(0,0,0, 0.3);
+    border-radius: 20px;
+}
+
+.card-login h1{
+    font-family: "Anton", "Poppins", sans-serif;
+    color: #fefedf;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card-login .btn{
+    flex-direction: row;
+    width: 100%;
+    padding: 6px auto;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 4px;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: #fefedf;
+}
+
+.card-login .btn button{
+    gap: 2rem;
+}
+
+.card-login .btn button:hover{
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5px;
+    gap: 1.3rem;
+}
+
+form input {
+    padding: 4px 0;
+    text-align: center;
+    border-radius: 12px;
+}
+
+form .submit-btn {
+    background-color: purple;
+    color: #fefedf;
+    border-radius: 12px;
+    padding: 4px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+form .submit-btn:hover{
+    color: pink;    
+}
+

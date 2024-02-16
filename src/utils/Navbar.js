@@ -2,8 +2,22 @@ import React from 'react'
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import AppLogo from '../assets/images/logo.jpeg';
+import { auth } from '../config/firebase_config';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
+
+  const Signout = async() => {
+    try{
+      await signOut(
+        auth
+      );
+    }
+    catch(err){
+      console.error(err);
+    }
+  }
+
   return (
     <main className='navbar-container'>
       <nav className='navbar flex justify-between items-center lg:justify-around shadow-lg shadow-orange-300'>
@@ -36,11 +50,22 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        {/* Register Page */}
+        
+        {auth?.currentUser?.email ? (
+          <>
         <div className='btn-login'>
-          <Link to="/login" className='login text-[#fefedf] bg-teal-500 hover:shadow-md hover:shadow-green-300 hover:font-2xl font-semibold hover:font-bold'>Login</Link>
+          <Link to="/login" className='login text-[#fefedf] bg-teal-500 hover:shadow-md hover:shadow-green-300 hover:font-2xl font-semibold hover:font-bold' onClick={Signout}>Logout</Link>
         </div>
+        </>
+        ) : (
+          <>
+          {/* Register Page */}
+          <div className='btn-login'>
+            <Link to="/login" className='login text-[#fefedf] bg-teal-500 hover:shadow-md hover:shadow-green-300 hover:font-2xl font-semibold hover:font-bold'>Login</Link>
+          </div>
+          </>
+        )}
+        
       </nav>
     </main>
   )

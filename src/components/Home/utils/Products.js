@@ -11,7 +11,7 @@ import Product7 from '../../../assets/images/brand6.webp'
 import Product8 from '../../../assets/images/brand7.webp'
 import Offer1 from '../../../assets/images/offer_1.webp'
 import Offer2 from '../../../assets/images/offer_2.webp'
-
+import Offer3 from '../../../assets/images/icici.webp'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -48,10 +48,6 @@ const Products = () => {
           Why Choose <span className='text-orange-600'>Pet <span className='text-orange-500'>Pulse</span></span>
         </h1>
       </main>
-
-      <div className='images-full'>
-          <img src={Offer1} alt='' />
-        </div>
 
       <section className='flex flex-col gap-3 w-full items-center h-full justify-around'>
 
@@ -136,8 +132,8 @@ const Products = () => {
     </div>
       </section>
           
-      <div className='images-full'>
-          <img src={Offer2} alt='' className='second' />
+      <div className='images-aligned'>
+          <img src={Offer3} alt='' className='second' />
         </div>
     </div>
   )

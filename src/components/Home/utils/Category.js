@@ -19,7 +19,7 @@ const Category = () => {
         Shop by Brand
       </h1>
 
-      <div className='flex flex-row justify-around gap-2 card-shop-pet w-full flex-wrap items-center'>
+      <div className='flex flex-row justify-around gap-2 card-shop-pet w-full flex-wrap items-center pb-4'>
         <img
         src={
           Brand1

@@ -43,7 +43,7 @@ import './main.css';
             paddingTop: "2rem",
             paddingBottom: "2rem",
         }}>
-<Card sx={{ maxWidth: 345 }}  className=" bg-gradient-to-tr from-purple-300 via-violet-300 to-sky-400 rounded-lg shadow-lg hover:shadow-purple-500 hover:shadow-lg">
+<Card sx={{ maxWidth: 345 }}  className="bg-[#fefedf] rounded-lg shadow-lg hover:shadow-purple-300 hover:shadow-md">
         <CardHeader
             avatar={
             <Avatar sx={{ bgcolor: "purple" }} aria-label="recipe">
@@ -118,7 +118,7 @@ import './main.css';
         </Collapse>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }} className="bg-gradient-to-tr from-purple-300 via-violet-300 to-sky-400 rounded-lg shadow-lg hover:shadow-purple-500 hover:shadow-lg">
+        <Card sx={{ maxWidth: 345 }}  className="bg-[#fefedf] rounded-lg shadow-lg hover:shadow-purple-300 hover:shadow-md">
         <CardHeader
             avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -193,7 +193,7 @@ import './main.css';
         </Collapse>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }} className="bg-gradient-to-tr from-purple-300 via-violet-300 to-sky-400 rounded-lg shadow-lg hover:shadow-purple-500 hover:shadow-lg">
+        <Card sx={{ maxWidth: 345 }}  className="bg-[#fefedf] rounded-lg shadow-lg hover:shadow-purple-300 hover:shadow-md">
         <CardHeader
             avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -267,8 +267,8 @@ import './main.css';
             </CardContent>
         </Collapse>
         </Card>
-
-        <Card sx={{ maxWidth: 345 }} className="bg-gradient-to-tr from-purple-300 via-violet-300 to-sky-400 rounded-lg shadow-lg hover:shadow-purple-500 hover:shadow-lg">
+        
+        <Card sx={{ maxWidth: 345 }}  className="bg-[#fefedf] rounded-lg shadow-lg hover:shadow-purple-300 hover:shadow-md">
         <CardHeader
             avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

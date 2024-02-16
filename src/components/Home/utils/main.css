@@ -80,7 +80,6 @@
 
 .explore:hover{
     transition: all .8s cubic-bezier(0.165, 0.84, 0.44, 1) ease-in;
-    color: lightgreen;
     font-family: "Poppins", sans-serif;
 }
 

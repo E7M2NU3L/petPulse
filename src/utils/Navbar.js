@@ -14,7 +14,7 @@ const Navbar = () => {
             <img 
             src={AppLogo}
             alt='logo'
-            className='border border-1 rounded-full hover:shadow-md hover:shadow-sky-400 ring-1 ring-blue-300 hover:ring-blue-500 shadow-sm shadow-gray-300'
+            className='border border-1 rounded-full'
             style={{
               width: "48px"
             }} 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Register Page */}
         <div className='btn-login'>
-          <Link to="/login" className='login text-[#fefedf] bg-teal-500 hover:shadow-md hover:shadow-green-300 hover:text-red-500 hover:font-2xl font-semibold hover:font-bold'>Login</Link>
+          <Link to="/login" className='login text-[#fefedf] bg-teal-500 hover:shadow-md hover:shadow-green-300 hover:font-2xl font-semibold hover:font-bold'>Login</Link>
         </div>
       </nav>
     </main>

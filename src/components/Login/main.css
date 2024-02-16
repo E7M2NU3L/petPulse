@@ -1,5 +1,5 @@
 .card-login{
-    padding: 4rem 1rem;
+    padding: 4rem 4rem;
     background: rgba(0,0,0, 0.3);
     border-radius: 20px;
 }
@@ -11,23 +11,19 @@
     padding-bottom: 1rem;
 }
 
-.card-login .btn{
+.card-login .btn button{
     flex-direction: row;
     width: 100%;
     padding: 6px auto;
     background-color: rgba(0,0,0, 0.7);
     display: flex;
-    justify-content: space-around;
+    margin: 0.8rem 0;
+    justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    gap: 0.4rem;
     padding: 4px;
-    gap: 1rem;
     flex-wrap: wrap;
     color: #fefedf;
-}
-
-.card-login .btn button{
-    gap: 2rem;
 }
 
 .card-login .btn button:hover{
@@ -44,12 +40,28 @@ form {
 
 form input {
     padding: 4px 0;
-    text-align: center;
     border-radius: 12px;
+    background: transparent;
+}
+
+form input{
+    border-bottom: 2px solid #fefdff;
+}
+
+:root{
+    --primary-color: #5E7349;
+    --secondary-color: #778C61;
+    --light-bg: #BFBAB0;
+    --orange-light: #BF7534;
+    --orange-bold: #BF532C;
+
+    --green-grad:  linear-gradient(to right top, #5e7349, #64794f, #6a7f55, #71865b, #778c61);
+
+    --orange-grad:  linear-gradient(to right top, #bf7534, #bf6d31, #bf652e, #bf5c2d, #bf532c);
 }
 
 form .submit-btn {
-    background-color: purple;
+    background-color: var(--orange-light);
     color: #fefedf;
     border-radius: 12px;
     padding: 4px 0;
@@ -57,6 +69,13 @@ form .submit-btn {
 }
 
 form .submit-btn:hover{
-    color: pink;    
+    background-color: var(--orange-bold);
+    transition: all .4s cubic-bezier(0.19, 1, 0.22, 1) ease-in;    
 }
+
+form .submit-btn:active{
+    background-color: var(--orange-bold);
+    transition: all.4s cubic-bezier(0.19, 1, 0.22, 1) ease-in;
+}
+
 

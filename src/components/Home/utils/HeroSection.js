@@ -58,7 +58,7 @@ const HeroSection = () => {
     <div className='image-holder' style={{
       paddingBottom: "1rem"
     }}>
-      <img src={Food2} className="shadow-lg shadow-slate-300 border-slate-400 border hover:shadow-purple-300 img" />
+      <img src={Food2} className="shadow-lg shadow-slate-300 hover:shadow-purple-300 img" />
     </div>
     </div>
     <div className='hero-footer bg-gradient-to-tr from-orange-400 via-amber-500 to-yellow-500' style={{
